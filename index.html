@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="asset/logo/vector/isolated-monochrome-white.svg">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -20,39 +21,35 @@
     <title>ezpie Learn coding</title>
 </head>
 
-<body>
+<body class="px-4 md:px-16 lg:px-32">
     <!-- offscreen -->
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav bg-blue-500">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="tutorials/python/basic/intro.html">
-            <h2>Python</h2>
+            <div class="text-white">Python</div>
         </a>
     </div>
     <!-- ------------------------------------------------- -->
     <section id="main">
-        <div class="beta">
-            <p class="text">
-                This is beta version of ezpie. Like it then
-                <a class="link"
-                    href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrKnMtccWvbnplvqTklpDFGqmgQlPQXVwdwZzGpcpcqCZWFBKhmwPtbSZzHspPsWQbqZg">give
-                    it</a>
-                a feedback
-            </p>
-        </div>
-        <nav class="nav">
-            <a href="index.html" class="nav-logo"><img src="asset/logo/vector/isolated-layout.svg" alt="Ezpie logo"
-                    width="100px"></a>
-            <a href="#" align="right" class="nav-link Tutorials" onclick="openNav()">Tutorials</a>
-            <a href="#" class="nav-link" align="right">challenges</a>
+
+        <div class="text-slate-600 absolute top-0 left-0 right-0 z-50 text-center pt-2"> This is beta version of ezpie. Website is subject to changes. </div>
+        <nav class="flex justify-between bg-white fixed top-0 left-0 right-0 px-4 md:px-16 lg:px-32">
+            <a href="index.html" class="nav-logo">
+                <img src="asset/logo/vector/isolated-layout.svg" alt="Ezpie logo" width="100px">
+            </a>
+            <div class="flex gap-8 text-lg text-white lg:pr-16 items-center">
+                <a title="Jump in the action!" href="#" class="px-4 py-2 bg-blue-500 transform transition-all duration-250 hover:bg-blue-300 hover:scale-105 rounded-md" onclick="openNav()">Tutorials</a>
+                <a title="Not available for now" href="#" class="px-4 py-2 bg-gray-400 transform transition-all duration-250 rounded-md cursor-not-allowed" >Challenges</a>
+            </div>
         </nav>
-        <div class="main2">
+        <div class="flex items-center pt-32 lg:px-32">
             <div class="intro-part">
-                <h1 class="intro">
-                    Learn to Code <br>
-                    for totally FREE <br>
-                    from <font class="ezpie">ezpie</font>
-                </h1>
-                <p class="intro-text">
+                <div class="intro text-6xl pb-8 text-slate-800">
+                    <div>Learn to Code</div>
+                    <div>completely for FREE</div>
+                    <div>with <span class="ezpie">ezpie</span></div>
+                </div>
+                <p class="intro-text text-2xl">
                     Learn coding with this beginner-friendly website <br>
                 </p>
             </div>
@@ -61,84 +58,60 @@
     </section>
 
     <section class="why">
-        <h2 class="head" align="center">Why Ezpie? you ask</h2>
-        <div class="wrapper" align="center">
-            <div class="easy">
-                <h4 class="heads">Learn with ease</h4>
-                <p class="text">
-                    Learn the right way with examples, <br>
-                    Real life problem and how I made <br>
-                    this website for you!
+        <div class="w-full text-center text-6xl text-slate-800 font-bold">Why Ezpie?</div>
+        <div class="flex gap-32 justify-center pt-16">
+            <div class="">
+                <div class="text-4xl text-slate-700 pb-4">Learn easily</div>
+                <p class="text-xl text-slate-600 max-w-xs">
+                    Learn the right way with examples, real life problems and how we made this website for you!
                 </p>
             </div>
-            <div class="trust after">
-                <h4 class="heads">You can trust Me</h4>
-                <p class="text">
-                    All content are written after <br>
-                    reading articles and wikipedia <br>
-                    about them.
+            <div class="">
+                <h4 class="text-4xl text-slate-700 pb-4">Backed by experts</h4>
+                <p class="text-xl text-slate-600 max-w-xs">
+                    Our team works to continuously provide you the best content possible.
                 </p>
             </div>
-
-            <div class="doing after">
-                <h4 class="heads">Free learning</h4>
-                <p class="text">
-                    Why waste money when you can learn for <br>
-                    free at ezpie, where everything is free!
+            <div class="">
+                <h4 class="text-4xl text-slate-700 pb-4">Free content</h4>
+                <p class="text-xl text-slate-600 max-w-xs">
+                    We give away valuable ressources for free, why would you want to go elsewhere?
                 </p>
             </div>
         </div>
     </section>
 
-    <footer class="foot">
-        <section class="foot-main">
-            <div class="detail">
-                <h1 class="head">Ezpie</h1>
-                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+    <footer class="absolute inset-x-0 bg-blue-500 px-4 md:px-16 lg:px-32 py-8 flex gap-16">
+            <div class="flex flex-col gap-4">
+                <div class="text-lg text-white"> Reach out to us at: ezpie.co@gmail.com</div>
+                <section class="flex justify-between">
+                    <div class="flex flex-row gap-2">
+                        <a href="https://github.com/ishaan010">
+                            <img class="net-icon" src="asset/logo/internet/GitHub-Mark-Light-32px.png"
+                                alt="my github page for ezpie" width="30px">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                            <img class="net-icon" src="asset/logo/internet/facebook.svg" alt="my facebook page for ezpie"
+                                width="30px">
+                        </a>
+                        <a href="https://twitter.com/EzpieCo">
+                            <img src="asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                                class="net-icon">
+                        </a>
+                    </div>
+                </section>
             </div>
-            <div class="tutorials">
-                <h3 class="course">course</h3>
-                <ul class="links">
-                    <li><a href="tutorials/python/basic/intro.html" class="list-item">Python</a></li>
-
-                </ul>
-            </div>
-            <div class="examples">
-                <h3 class="course">challenges</h3>
-                <!-- TODO add example links -->
-                <ul class="links">
-                    <li><a href="#" class="list-item">Python challenges</a></li>
-                </ul>
-            </div>
-
-            <div class="Company">
-                <h3 class="course">Company</h3>
-                <ul class="links">
+            <div class="flex flex-col justify-center">
+                <h3 class="text-lg text-white font-bold pb-2">Company</h3>
+                <ul class="links ">
                     <!-- TODO add links -->
-                    <li><a href="company/about.html" class="list-item">About</a></li>
-                    <li><a href="company/privacy.html" class="list-item">Privacy Policy</a></li>
-                    <li><a href="company/terms.html" class="list-item">Terms and Conditions</a></li>
+                    <li><a href="company/about.html" class="list-item w-max">About</a></li>
+                    <li><a href="company/privacy.html" class="list-item w-max">Privacy Policy</a></li>
+                    <li><a href="company/terms.html" class="list-item w-max">Terms and Conditions</a></li>
                 </ul>
             </div>
         </section>
-        <hr>
-        <section class="info">
-            <p class="copyright">Copyright (c) 2022 Ezpie</p>
-            <div class="net">
-                <a href="https://github.com/ishaan010">
-                    <img class="net-icon" src="asset/logo/internet/GitHub-Mark-Light-32px.png"
-                        alt="my github page for ezpie" width="30px">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100082135591250">
-                    <img class="net-icon" src="asset/logo/internet/facebook.svg" alt="my facebook page for ezpie"
-                        width="30px">
-                </a>
-                <a href="https://twitter.com/EzpieCo">
-                    <img src="asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
-                        class="net-icon">
-                </a>
-            </div>
-        </section>
+        <p class="ml-auto mt-auto text-white">Copyright (c) 2022 Ezpie</p>
     </footer>
 
     <script src="js/nav.js"></script>
