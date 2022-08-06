@@ -32,8 +32,8 @@
     <!-- ------------------------------------------------- -->
     <section id="main">
 
-        <div class="text-slate-600 absolute top-0 left-0 right-0 z-50 text-center pt-2"> This is beta version of ezpie. Website is subject to changes. </div>
-        <nav class="flex justify-between bg-white fixed top-0 left-0 right-0 px-4 md:px-16 lg:px-32">
+        <!-- <div class="text-slate-600 bg-white absolute top-0 left-0 right-0 z-50 text-center pt-2"> This is beta version of ezpie. Website is subject to changes. </div> -->
+        <nav class="flex gap-4 sm:gap-0 sm:justify-between bg-white fixed top-0 left-0 right-0 px-4 md:px-16 lg:px-32">
             <a href="index.html" class="nav-logo">
                 <img src="asset/logo/vector/isolated-layout.svg" alt="Ezpie logo" width="100px">
             </a>
@@ -42,7 +42,7 @@
                 <a title="Not available for now" href="#" class="px-4 py-2 bg-gray-400 transform transition-all duration-250 rounded-md cursor-not-allowed" >Challenges</a>
             </div>
         </nav>
-        <div class="flex items-center pt-32 lg:px-32">
+        <div class="flex items-center gap-32 pt-32 lg:px-32">
             <div class="intro-part">
                 <div class="intro text-6xl pb-8 text-slate-800">
                     <div>Learn to Code</div>
@@ -53,13 +53,13 @@
                     Learn coding with this beginner-friendly website <br>
                 </p>
             </div>
-            <div class="image"><img src="asset/logo/vector/default.svg" width="400px"></div>
+            <img class="hidden md:block" src="asset/logo/vector/default.svg" width="400px" />
         </div>
     </section>
 
-    <section class="why">
+    <section class="py-16">
         <div class="w-full text-center text-6xl text-slate-800 font-bold">Why Ezpie?</div>
-        <div class="flex gap-32 justify-center pt-16">
+        <div class="flex flex-col items-center md:items-start md:flex-row gap-32 justify-center pt-16">
             <div class="">
                 <div class="text-4xl text-slate-700 pb-4">Learn easily</div>
                 <p class="text-xl text-slate-600 max-w-xs">
@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <footer class="absolute inset-x-0 bg-blue-500 px-4 md:px-16 lg:px-32 py-8 flex gap-16">
+    <footer class="absolute inset-x-0 bg-blue-500 px-8 md:px-16 lg:px-32 py-8 flex flex-col md:flex-row gap-16">
             <div class="flex flex-col gap-4">
                 <div class="text-lg text-white"> Reach out to us at: ezpie.co@gmail.com</div>
                 <section class="flex justify-between">
