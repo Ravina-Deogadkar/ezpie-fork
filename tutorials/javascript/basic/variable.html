@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../../../asset/logo/vector/isolated-monochrome-white.svg">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>JavaScript Variables</title>
+</head>
+
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="intro.html">JavaScript</a>
+    </div>
+
+    <div id="main">
+        <nav class="nav">
+            <a href="../../../index.html" class="nav-logo"><img src="../../../asset/logo/vector/isolated-layout.svg"
+                    width="100px"></a>
+            <a href="#" class="nav-link" onclick="openNav()">Tutorials</a>
+            <a href="#" class="nav-link">Examples</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">JavaScript basic</h4>
+                    <hr>
+                    <li><a class="learn active" href="variable.html">JavaScript Variables</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <h1 class="head">JavaScript Variables</h1>
+                <p class="text">In this article you will learn what's a variable</p>
+                <hr>
+                <p class="main-text">
+                <section class="what">
+                    <h1 class="head">What's a variable?</h1>
+                    <p class="text">
+                        A variable is a label that reference a variable like a number or string. We need to declare a variable before using them. 
+                    </p>
+                </section>
+                <hr>
+                <section class="how">
+                    <h1 class="head">How to declare a variable</h1>
+                    <p class="text">
+                        To declare a variable we need to use <b>let</b> keyword along with variable name. <br>
+                        A variable name can be any valid identifier. We can also use <b>var</b> keyword to declare a variable both are similar but var uses "old fashion" way. 
+                        We would look at them later in our tutorial.
+                    </p>
+                    <div class="code">
+                        <font class="comment"># This is a variable called message with a value "Hello There!"</font><br>
+                        <font class="s">let message</font> = <font class="num">"Hello There!"</font> <br>
+                    </div>
+                    <p class="text">
+                        Here we have declared a variable called <font class="unique">message</font> with a value of
+                        <font class="unique">"Hello There!"</font>. <br>
+                        Take it in the simple way message is just a label referencing to the location where "Hello There!" is stored. <br>
+                        So in that manner, label can reference to another location right? <br>
+                        We will make <b>message</b> variable reference to some other String.
+                    </p>
+                    <div class="code">
+                        <font class="s">let message</font> = <font class="num">"Hello There!"</font><br>
+                        <font class="s">message</font> = <font class="num">"Have a great day!"</font><br>
+                    </div>
+                    <p class="text">
+                        message is now reference to other string "Have a great day!" but what if instead of string other data type is assigned to message. Will it throw error?
+                        <br/>
+                        <b>No!</b>It's beacause JavaScript are dynamically typed that means data type of a variable depends on data it reference. Although it is not recommended, but varaibles in JavaScript can reference any type of data .
+                    </p>
+
+                    <div class="note">
+                        <b>NOTE:</b> Remember one thing, the variable name are case sensitive <br>
+                    </div>
+                </section>
+                <hr>
+
+                <section class="Undefined">
+                    <h1 class="head">Undefined</h1>
+                    <p class="text">
+                        Undefined is a special data type in JavaScript it's not like null or undeclared. When we declare a variable and do not assign any value to it, the value of variable eventually becomes Undefined.
+                        example:
+                    </p>
+                    <div class="code">
+                        <font class="s">let counter;</font><br>
+                        <font class="s">console.log(counter)</font>
+                    </div>
+                    <p class="text">
+                        Here <font class="unique">counter</font> is declared but value is not assigned to it and Therefore value of counter is Undefined.
+                        <b>Undeclared</b> on the other hand is when the variable is used even before we declare it. We get undeclared exception in the log when we attempt to access variable before declaring them.
+                        <b>Null</b> is an valid data type that can be assigned to a variable.
+
+                    </p>
+                </section>
+                <hr>
+
+                <section class="naming">
+                    <h1 class="head">How to name a variable</h1>
+                    <p class="text">
+                        do and don't to name a variable in python:
+                    <ul>
+                        <li>Variable name must not start with a number(1name, 23name)</li>
+                        <li>Variable name must start with a letter, underscore or dollar sign(name, _name, $name)</li>
+                        <li>Variable name can only contain number, letter, underscore or dollar sign(name1, n1ame)</li>
+                        <li>Variable name must not have space in between(my age)</li>
+                        <li>Variable name cannot use reserved words(const, class, var)</li>
+
+                    </ul>
+                    </p>
+                    <div class="code">
+                        <font class="comment"># Legal ways</font><br>
+                        <font class="s">let name</font> = <font class="str">'Tom'</font><br>
+                        <font class="s">let name_first</font> = <font class="str">'Tom'</font><br>
+                        <font class="s">let $name1</font> = <font class="str">'Tom'</font><br>
+                        <font class="s">let _name1</font> = <font class="str">'Tom'</font><br>
+
+                    </div><br>
+                    <div class="code">
+                        <font class="comment"># Illegal ways</font><br>
+                        <font class="s">let 1name</font> = <font class="str">'Tom'</font><br>
+                        <font class="s">let name-first</font> = <font class="str">'Tom'</font><br>
+                        <font class="s">let name first</font> = <font class="str">'Tom'</font><br>
+                        <font class="s">let const</font> = <font class="str">'Tom'</font><br>
+
+                    </div><br>
+                </section>
+                <hr>
+
+                <section class="mulit-word">
+                    <h1 class="head">multi-word naming</h1>
+                    <p class="text">
+                        Sometimes variable names can be composed of multiple words and to make them readable we make use of camel-case pattern<br>
+                        meaning all the first letter apart from the first word can be capital:
+                    </p>
+                    <div class="code">
+                        <font class="comment"># This is how</font><br>
+                        <font class="s">numberOfApples</font> = <font class="num">460</font>
+                    </div>
+                </section>
+                <hr>
+
+                <button class="btn">
+                    <a href="data-type.html" class="next">Next: Javascript Data Type</a>
+                </button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tutorials">
+                <h3 class="course">course</h3>
+                <ul class="links">
+                    <li><a href="../../python/basic/intro.html" class="list-item">Python</a></li>
+                    <li><a href="intro.html" class="list-item">JavaScript</a></li>
+
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+                    <li><a href="#" class="list-item">JavaScript Challenges</a></li>
+
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li><a href="../../company/about.html" class="list-item">About</a></li>
+                    <li><a href="../../company/privacy.html" class="list-item">Privacy Policy</a></li>
+                    <li><a href="../../company/terms.html" class="list-item">Terms and Conditions</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../../asset/logo/internet/facebook.svg"
+                        alt="my facebook page for ezpie" width="30px">
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../../js/nav.js"></script>
+
+    </body>
+</html>
