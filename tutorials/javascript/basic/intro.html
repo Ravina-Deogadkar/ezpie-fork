@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../../../asset/logo/vector/isolated-monochrome-white.svg">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>JavaScript Variables</title>
+</head>
+
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../python/basic/intro.html">Python</a>
+        <a href="intro.html">JavaScript</a>
+    </div>
+
+    <div id="main">
+        <nav class="nav">
+            <a href="../../../index.html" class="nav-logo"><img src="../../../asset/logo/vector/isolated-layout.svg"
+                    width="100px"></a>
+            <a href="#" class="nav-link" onclick="openNav()">Tutorials</a>
+            <a href="#" class="nav-link">Examples</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">JavaScript basic</h4>
+                    <hr>
+                    <li><a class="learn active" href="intro.html">JavaScript Intro</a></li>
+                    <li><a class="learn" href="variable.html">JavaScript Variables</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <h1 class="head">Getting started with JavaScript</h1>
+                <p class="text">In this article you will learn how to run JavaScript on your computer</p>
+                <hr>
+                <p class="main-text">
+                    Before that a quick intro to JavaScript: <br>
+
+                    <section class="programiz">
+                        <i>
+                            Javascript is a powerful programming language that makes website interactive. JavaScript was invented by Brendan Eich.
+                            <br>
+                            <br>
+                            JavaScript was initially created to “make web pages alive”. The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
+                            <br>
+                            <br>
+                            JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the <b>JavaScript engine.</b>
+                        </i>
+                    </section>
+                    <br/>
+                    <hr>
+                    
+                    <section class="uses">
+                        <h1>How to use JavaScript</h1>
+                        <p class="text">
+                            <b>Internal JS: </b>JavaScript can be embedded into HTML file using script tag, and then script tag can be used inside head tag or body tag.
+                            <br/>
+                            <b>External JS: </b>JavaScript can be written in another file and then link the file in the head tag of the HTML file 
+                        </p>
+                    </section>
+                    <hr>
+
+                    <section class="inBrowser">
+                        <h1>How to run JavaScript code in Browser</h1>
+                        <p class="text">
+                            To run JavaScript script in browser open any browser and right click and select <b>Inspect</b>(or F12 for chrome).<br>
+                            Go to console and write JavaScript code and press enter to execute the script.<br>
+                        </p>
+                        <img class="img" src="../../../asset/img/inbrowser.png" height="500px" width="700px"
+                        alt="python's interactive shall"><br>
+                    </section>
+                    <hr>
+
+                    <section class="engine">
+                        <h1>How JavaScript Engine works</h1>
+                            <p class="text">
+                            The engine(embedded in browser) reads the script.<br>
+                            Then it converts script to machine language.<br>
+                            And then machine code runs fasts.
+                            </p>
+
+                    </section>
+                    <hr>
+
+                    <section class="helloworld">
+                        <h1>Hello world</h1>
+                        <p class="text">
+                            Use console.log method to print in console. Copy 
+                            <div class="code">
+                                <font class="print">console.log</font>(<font class="str">"Hello World!"</font>)
+                            </div>
+                            <p class="text">
+                                When you will run it, it will give the output as:
+                            </p>
+                            <div class="code">
+                                'Hello World!'
+                            </div>
+                            <p class="text">
+                                Congratulations! on writing your first program in JavaScript!!
+                            </p>
+                        </p>
+                    </section>
+                </p>
+
+                <button class="btn">
+                    <a href="variable.html" class="next">Next: Javascript Variable</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tutorials">
+                <h3 class="course">course</h3>
+                <ul class="links">
+                    <li><a href="../../python/basic/intro.html" class="list-item">Python</a></li>
+                    <li><a href="intro.html" class="list-item">JavaScript</a></li>
+
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+                    <li><a href="#" class="list-item">JavaScript Challenges</a></li>
+
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li><a href="../../company/about.html" class="list-item">About</a></li>
+                    <li><a href="../../company/privacy.html" class="list-item">Privacy Policy</a></li>
+                    <li><a href="../../company/terms.html" class="list-item">Terms and Conditions</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../../asset/logo/internet/facebook.svg"
+                        alt="my facebook page for ezpie" width="30px">
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../../js/nav.js"></script>
+
+    </body>
+</html>
